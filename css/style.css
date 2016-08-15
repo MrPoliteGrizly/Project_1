@@ -1,0 +1,49 @@
+#header {
+  height: 100px;
+  background-color: #00B3B0; }
+
+#logo {
+  margin-top: 15px; }
+
+#reg-log {
+  margin-top: 15px;
+  padding: 10px; }
+
+#reg button {
+  float: right; }
+
+#reg > button {
+  margin-right: 10px; }
+
+#content {
+  height: 500px;
+  margin-top: 30px; }
+
+#laptop {
+  height: 400px;
+  text-align: center; }
+
+#block-text {
+  height: 400px;
+  margin-top: 30px;
+  background-color: lightgrey; }
+
+#all {
+  margin-top: 130px; }
+
+#footer {
+  margin-top: 30px;
+  height: 100px;
+  background-color: #945C26;
+  color: white; }
+
+#imglap {
+  margin-top: 30px;
+  height: 400px;
+  width: 560px; }
+
+#yout {
+  max-height: 300px;
+  max-width: 300px; }
+
+/*# sourceMappingURL=style.css.map */
