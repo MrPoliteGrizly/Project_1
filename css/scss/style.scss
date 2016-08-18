@@ -52,13 +52,23 @@
 #brick{
 	margin-top: 20px;
 	padding: 10px;
+	
 	div{
 		border: 1px solid grey;
 		height: 150px;
 		margin-top: 20px;
-    	box-shadow: 10px 10px 20px rgba(0,0,0,0.5); /* Параметры тени */
+    	box-shadow: $subject-shadow;
     	padding: 10px;
+
+    	a{
+			 display: block;
+     		text-align: center; 
+     		height: 100%; 
+     		color: #666;
+    	}
+    	
 	}
+
 }
 
 
