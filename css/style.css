@@ -17,11 +17,19 @@
 
 #content {
   height: 500px;
-  margin-top: 30px; }
+  margin-top: 30px;
+  padding: 0px;
+  margin: 0px auto; }
 
 #laptop {
   height: 400px;
   text-align: center; }
+
+#block-laptop {
+  border: 1px solid black; }
+
+#carousel {
+  border: 1px solid black; }
 
 #block-text {
   height: 400px;
