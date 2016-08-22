@@ -33,7 +33,7 @@
 }
 #carousel{
 	border: 1px solid black;
-	
+
 }
 #block-text{
 	height: 400px;
@@ -43,9 +43,12 @@
 #all{
 	margin-top: 130px;
 }
-#footer{
-	margin-top: 30px;
+footer{
+	position: absolute;
+	left: 0px;
+	bottom: 0px; 
 	height: 100px;
+	width: 100%;
 	background-color: $footer-color;
 	color: white;
 }
