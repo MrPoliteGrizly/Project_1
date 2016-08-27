@@ -1,9 +1,10 @@
+{% load staticfiles %}
 <!-- Autor MrPoliteGrizly-->
 <!DOCTYPE html>
 <html>
 	<head>
-		<link rel="stylesheet" href="css/style.css">
-		<link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="{% static "css/style.css" %}" media="screen">
+		<link rel="stylesheet" href="{% static "css/bootstrap/css/bootstrap.min.css" %}" media="screen">
 		<meta charset="utf-8">
 		<title>Index</title>
 	</head>
@@ -36,7 +37,7 @@
 
 							  <div class="carousel-inner" role="listbox">
 							    <div class="item active">
-							      <img src="images/maxresdefault.jpg" id="imglap">
+							      <img src="{% static "images/maxresdefault.jpg" %}" id="imglap">
 							      <div class="carousel-caption">
 							        <h3>ЕЕЕ физика</h3>
     								<p>Обучение это круто</p>
@@ -44,7 +45,7 @@
 							    </div>
 
 							    <div class="item">
-							      <img src="images/coolman.jpg" alt="..." id="imglap">
+							      <img src="{% static "images/coolman.jpg" %}" alt="..." id="imglap">
 							      <div class="carousel-caption">
 							       	<h3>ЕЕЕ математика</h3>
     								<p>Обучение это не круто(</p>	
@@ -66,7 +67,7 @@
 
 					<button type="button" class="btn btn-success">Зарегестрируйся сейчас!</button>
 					или
-					<button type="button" class="btn btn-primary">Посмотрите курсы</button>
+					<a href="main.html"><button type="button" class="btn btn-primary">Посмотрите курсы</button></a>
 
 				</div>
 
@@ -100,6 +101,6 @@
 	 	</footer>
 		
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="bootstrap/js/bootstrap.min.js"></script>
+		<script src="{% static "css/bootstrap/js/bootstrap.min.js" %}"></script>
 	</body>
 </html>
