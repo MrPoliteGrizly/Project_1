@@ -56,7 +56,6 @@ footer{
 }
 #brick{
 	margin-top: 20px;
-	padding: 10px;
 	
 	div{
 		border: 1px solid grey;
@@ -64,6 +63,7 @@ footer{
 		margin-top: 20px;
     	box-shadow: $subject-shadow;
     	padding: 10px;
+    	margin-left: 30px;
 
     	a{
 			 display: block;

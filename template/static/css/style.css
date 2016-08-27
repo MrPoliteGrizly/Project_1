@@ -52,14 +52,14 @@ footer {
   max-width: 300px; }
 
 #brick {
-  margin-top: 20px;
-  padding: 10px; }
+  margin-top: 20px; }
   #brick div {
     border: 1px solid grey;
     height: 150px;
     margin-top: 20px;
     box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5);
-    padding: 10px; }
+    padding: 10px;
+    margin-left: 30px; }
     #brick div a {
       display: block;
       text-align: center;
