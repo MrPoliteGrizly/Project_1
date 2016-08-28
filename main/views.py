@@ -9,3 +9,6 @@ def main(request):
 		'sub_list':sub_list
 	}
 	return render(request, 'main/main.html', context)
+
+def login(request):
+	return render(request, 'reg-log/log.html')
