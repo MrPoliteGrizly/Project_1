@@ -1,14 +1,9 @@
+{% extends 'base.html' %}
 {% load staticfiles %}
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-	<meta charset="UTF-8">
-	<link rel="stylesheet" href="{% static "css/style.css" %}">
-	<link rel="stylesheet" href="{% static "css/bootstrap/css/bootstrap.min.css" %}">
-	<title>Main page</title>
-</head>
-<body>
+
+	{% block title %}Главная строница{% endblock %}
 	
+	{% block head %}
 	 	<div class="container-fluid" id="header">
 	 		<div class="row">
 	 			<div class="col-lg-2" id="logo">
@@ -16,18 +11,21 @@
 	 			</div>
 
 		 		<div class="col-lg-2 col-lg-offset-8" id="reg-log">
-		 			<a href=""><button type="button" class="btn btn-success">Регистрация</button></a>
-		 			<a href="/main/log/"><button type="button" class="btn btn-primary">Войти</button></a>
+		 			<a href="/reg/"><button type="button" class="btn btn-success">Регистрация</button></a>
+		 			<a href="/log/"><button type="button" class="btn btn-primary">Войти</button></a>
 		 		</div>
 
 			</div>
 	 	</div>
+	{% endblock %}
+	
 
+	{% block content %}
 	 	<div class="container" id="brick">
 	 		{% if sub_list %}
 
 	 			{% for subject in sub_list%}
-	 			<div class="col-lg-2 lead text-center block-link"><a href="/index/">{{ subject.sub }}</a></div>
+	 			<div class="col-lg-2 lead text-center block-link"><a href='/'>{{ subject.sub }}</a></div>
 	 			{% endfor %}
 
 	 		<!--<div class="col-lg-2 col-lg-offset-3 lead text-center block-link"><a href="">Русский</a></div>
@@ -35,17 +33,21 @@
 
 	 		{% endif %}
 	 	</div>
-		
+	{% endblock %}
+
+	{% block footer %}
+		<style>
+			footer{
+				height: 60px;
+			}
+
+		</style>
+
 		<footer>
 		 	<div class="container-fluid" id="footer" align="center">
 		 		<p>&copy;#BIGLEARN</p>
 		 	</div>
 	 	</footer>
-
 	 	
+	{% endblock %}
 		
-
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-	<script src="{% static "css/bootstrap/js/bootstrap.min.js" %}"></script>
-</body>
-</html>

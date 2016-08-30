@@ -1,15 +1,9 @@
+{% extends "base.html" %}
 {% load staticfiles %}
-<!-- Autor MrPoliteGrizly-->
-<!DOCTYPE html>
-<html>
-	<head>
-		<link rel="stylesheet" href="{% static "css/style.css" %}" media="screen">
-		<link rel="stylesheet" href="{% static "css/bootstrap/css/bootstrap.min.css" %}" media="screen">
-		<meta charset="utf-8">
-		<title>Index</title>
-	</head>
-	<body>
-	
+
+		{% block title%}Первая строница{% endblock %}
+
+		{% block head %}
 	 	<div class="container-fluid" id="header">
 	 		<div class="row">
 	 			<div class="col-lg-2" id="logo">
@@ -23,7 +17,10 @@
 
 			</div>
 	 	</div>
+	 	{% endblock %}
 
+
+		{% block content %}
 	 	<div id="content" class="container">
 	 			<div class="col-lg-6" id="block-laptop">
 
@@ -72,35 +69,16 @@
 				</div>
 
 	 	</div>
-	
-	 <!-- Nav
-        <div class="col-lg-2 sidebar-offcanvas" id="sidebar">
-          <div class="list-group">
-            <a href="#" class="list-group-item active">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-            <a href="#" class="list-group-item">Link</a>
-          </div>
+	 	{% endblock %}
 
+	 	{% block footer %}
 
-        </div> -->
-
-
-      </div>
-		
 		<footer>
 		 	<div class="container-fluid" id="footer" align="center">
 		 		<p>&copy;#BIGLEARN</p>
 		 	</div>
 	 	</footer>
-		
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-		<script src="{% static "css/bootstrap/js/bootstrap.min.js" %}"></script>
-	</body>
-</html>
+
+	 	{% endblock %}
+	
+
