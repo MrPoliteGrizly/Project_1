@@ -3,6 +3,16 @@
 
 	{% block title %}Войти{% endblock %}
 	{% block content %}
+
+		<style>
+			#header{
+				display: none;
+			}
+			footer{
+				display: none;
+			}
+		</style>
+
 		<div class="container" id="block-form">
 			<div class="col-lg-4 col-lg-offset-4" id="form-block">
 				<h1 class="text-center">Войти:</h1>
@@ -34,7 +44,8 @@
 					    </div>
 					  </div>
 					</form>
-				<a href="/reg/" class="link">Регистрация</a>
+				<a href="{% url 'reg' %}">Регистрация</a>
 			</div>
 		</div>
+
 	{% endblock %}

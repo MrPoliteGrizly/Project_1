@@ -1,4 +1,4 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from django.http import HttpResponse
 from django.template import loader
 from .models import Subject
@@ -14,6 +14,11 @@ def main(request):
 		'sub_list':sub_list
 	}
 	return render(request, 'main/main.html', context)
+
+def sub_inf(request, sub_id):
+	article = get_object_or_404(Subject, id=sub_id)
+	context = { "article":article }
+	return render(request, 'main/sub_inf.html', context)
 
 def login(request):
 	return render(request, 'reg-log/log.html')

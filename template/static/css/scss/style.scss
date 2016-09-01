@@ -2,7 +2,7 @@
 
 
 #header{
-	height: $height;
+	height: $height-head;
 	background-color: $head-color;
 }
 #logo{
@@ -37,9 +37,6 @@
 	margin-top: 130px;
 }
 footer{
-	position: absolute;
-	left: 0px;
-	bottom: 0px; 
 	height: 100px;
 	width: 100%;
 	background-color: $footer-color;
@@ -83,5 +80,15 @@ footer{
 		background-color: #FCFCFF;	
 	}
 
+}
+#sub-inf{
+	margin: 20px;
+	height: auto; 
+	border: 1px solid $content-border-color;
+	border-radius: 10px;
+	box-shadow: $subject-shadow;
+}
+#btn-add{
+	margin-top: 20px;
 }
 
