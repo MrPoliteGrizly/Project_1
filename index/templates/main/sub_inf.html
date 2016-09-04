@@ -9,6 +9,10 @@
 		footer{
 			display: none;
 		}
+		#video-inf{
+			margin-top: 20px;
+			padding-bottom: 20px;
+		}
 	</style>
 
 
@@ -18,7 +22,7 @@
 			<h1 class="text-center">{{ article.sub }}</h1>	
 			<div class="col-lg-6">
 				<img src="{% static "images/math.jpg" %}" class="col-lg-12 img-rounded" alt="">
-				<div class="col-lg-6 col-lg-offset-3" id="btn-add">
+				<div class="col-lg-12" id="btn-add">
 					<button class="btn btn-success btn-lg btn-block">Записаться</button>
 				</div>
 			</div>
@@ -27,7 +31,7 @@
 				<p>{{ article.sub_text }}</p>
 			</div>
 			
-		<img src="{% static "images/math.jpg" %}" class="col-lg-12 img-rounded" alt="">
+		<img src="{% static "images/youtube-logo-wallpaper-for-youtube-channel-art-142-946.jpg" %}" class="col-lg-6 col-lg-offset-3 img-rounded" id="video-inf" alt="">
 	</div>
 
 {% endblock %}
