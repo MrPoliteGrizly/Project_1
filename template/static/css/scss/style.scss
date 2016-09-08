@@ -1,6 +1,7 @@
 @import "index";
 
 
+
 #header{
 	height: $height-head;
 	background-color: $head-color;
@@ -20,18 +21,15 @@
 }
 #content{
 	height: 500px;
-	margin-top: 30px;
-	padding: 0px;
-	margin: 0px auto;
+	margin-top: 50px;
 }
-#laptop{
+#block-laptop{
 	height: 400px;
-	text-align: center;
+ 	background-color: #b2ebf2;
 }
 #block-text{
 	height: 400px;
-	margin-top: 30px;
-	background-color: lightgrey;
+	color: white;
 }
 #all{
 	margin-top: 130px;
@@ -39,7 +37,6 @@
 footer{
 	height: 100px;
 	width: 100%;
-	background-color: $footer-color;
 	color: white;
 }
 #imglap{

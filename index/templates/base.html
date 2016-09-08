@@ -3,14 +3,17 @@
 <!DOCTYPE html>
 <html>
 	<head>
+		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="{% static "css/style.css" %}" media="screen">
+		<link rel="stylesheet" href="{% static "css/materialize.min.css" %}" media="screen,projection">
 		<link rel="stylesheet" href="{% static "css/bootstrap/css/bootstrap.min.css" %}" media="screen">
 		<meta charset="utf-8">
+
 		<title>{% block title %} {% endblock %}</title>
 	</head>
 	<body>
 	
-	<div class="container-fluid" id="header">
+	<div class="container-fluid blue lighten-1" id="header">
 	 		<div class="row">
 	 			<div class="col-lg-2" id="logo">
 	 				<h3>#BIGLEARN</h3>
@@ -45,13 +48,15 @@
 
         </div> -->
 
-		<footer>
-		 	<div class="container-fluid" id="footer" align="center">
-		 		<p>&copy;#BIGLEARN</p>
-		 	</div>
-	 	</footer>
+		<footer class="page-footer orange">
+         
+        </footer>
 		
+		<!-- Bootstrap -->
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="{% static "css/bootstrap/js/bootstrap.min.js" %}"></script>
+		<!-- Materialize -->
+		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+      	<script type="text/javascript" src="{% static "js/materialize.min.js" %}"></script>
 	</body>
 </html>
