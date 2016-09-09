@@ -1,23 +1,13 @@
 @import "index";
+@import "sass/materialize.scss";
 
-
-
+	
 #header{
 	height: $height-head;
 	background-color: $head-color;
 }
-#logo{
-	margin-top: 15px;
-}
 #reg-log{
-	margin-top: 15px;
-	padding: 10px;
-}
-#reg button{
-	float: right;
-}
-#reg > button{
-	margin-right: 10px;
+	margin-top: 28px;
 }
 #content{
 	height: 500px;
@@ -29,10 +19,7 @@
 }
 #block-text{
 	height: 400px;
-	color: white;
-}
-#all{
-	margin-top: 130px;
+	@extend .teal, .darken-3, .white-text;
 }
 footer{
 	height: 100px;
@@ -45,8 +32,7 @@ footer{
 	width: 560px;
 }
 #yout{
-	max-height: 300px;
-	max-width: 300px;
+	margin-top: 60px;
 }
 #brick{
 	margin-top: 20px;

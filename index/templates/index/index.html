@@ -15,23 +15,27 @@
 		</style>
 
 	 	<div id="content" class="container">
-	 			<div class="col-lg-6" id="block-laptop">
+	 		<div class="row">
+	 			<div class="col l6" id="block-laptop">
 
-				
+	 				<div class="video-container" id="yout">
+        				<iframe width="853" height="480" src="//www.youtube.com/embed/Q8TXgCzxEnw?rel=0" frameborder="0" allowfullscreen></iframe>
+      				</div>
+        
 	 			</div> 
 			
-				<div class="col-lg-6 indigo" id="block-text">
+				<div class="col l6" id="block-text">
 					<div id="all">
-						<h1>Hello world!</h1>
+						<h2>Hello</h2>
 						<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui.</p>
 					</div>
 
 					<!--<button type="button" class="btn btn-success">Зарегестрируйся сейчас!</button>
 					или-->
-					<a href="{% url 'main' %}"><button type="button" class="waves-effect waves-light btn-large">Посмотрите курсы</button></a>
+					<a href="{% url 'main' %}"><button type="button" class="waves-effect waves-light btn-large green accent-3">Посмотрите курсы</button></a>
 
 				</div>
-
+			</div>
 	 	</div>
 	 	{% endblock %}
 

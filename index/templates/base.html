@@ -5,8 +5,7 @@
 	<head>
 		<link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 		<link rel="stylesheet" href="{% static "css/style.css" %}" media="screen">
-		<link rel="stylesheet" href="{% static "css/materialize.min.css" %}" media="screen,projection">
-		<link rel="stylesheet" href="{% static "css/bootstrap/css/bootstrap.min.css" %}" media="screen">
+		<!--<link rel="stylesheet" href="{% static "css/bootstrap/css/bootstrap.min.css" %}" media="screen"> -->
 		<meta charset="utf-8">
 
 		<title>{% block title %} {% endblock %}</title>
@@ -15,14 +14,15 @@
 	
 	<div class="container-fluid blue lighten-1" id="header">
 	 		<div class="row">
-	 			<div class="col-lg-2" id="logo">
-	 				<h3>#BIGLEARN</h3>
+	 			<div class="col l2 offset-l1" id="logo">
+	 				<h3 class="left-align">#BIGLEARN</h3>
 	 			</div>
 
-		 		<div class="col-lg-2 col-lg-offset-8" id="reg-log">
-		 			<a href="{% url 'reg' %}"><button type="button" class="btn btn-success">Регистрация</button></a>
-		 			<a href="{% url 'log' %}"><button type="button" class="btn btn-primary">Войти</button></a>
+		 		<div class="row col offset-l4" id="reg-log">
+		 			<a href="{% url 'reg' %}" class="waves-effect waves-light btn light-blue darken-3"><i class="material-icons right">contacts</i>Регистрация</a>
+		 			<a href="{% url 'log' %}" class="waves-effect waves-light btn"><i class="material-icons right">input</i>Войти</a>
 		 		</div>
+		 		
 
 			</div>
 	</div>
@@ -52,12 +52,16 @@
          
         </footer>
 
-		<script src="{% static "js/main.js" %}"></script>
-		<!-- Bootstrap -->
+        
+
+   
+		<!-- Bootstrap 
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 		<script src="{% static "css/bootstrap/js/bootstrap.min.js" %}"></script>
-		<!-- Materialize -->
+		 Materialize -->
+
 		<script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
-      	<script type="text/javascript" src="{% static "js/materialize.min.js" %}"></script>
+		<script src="{% static "css/scss/js/bin/materialize.min.js" %}"></script>
+  
 	</body>
 </html>
